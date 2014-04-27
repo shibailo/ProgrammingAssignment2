@@ -1,7 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## It creates special object which can be used for cached calculation of inversion
 
 makeCacheMatrix <- function(x = matrix()) {
         inversed <- NULL
@@ -16,10 +13,9 @@ makeCacheMatrix <- function(x = matrix()) {
              setinversed = setinversed,
              getinversed = getinversed)
 }
-}
 
 
-## Write a short comment describing this function
+## Function which makes fastened calculation for matrix inversion
 
 cacheSolve <- function(x, ...) {
        inversed <- x$getinversed()
